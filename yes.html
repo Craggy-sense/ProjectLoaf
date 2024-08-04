@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./yes_style.css">
+    <style>
+        /* Internal CSS for centering content */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             /* Optional: background color */
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+             /* Optional: background color */
+            border-radius: 10px; /* Optional: rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow */
+        }
+
+        .gif_container img {
+            width: 300px; /* Adjust size as needed */
+            height: 300px; /* Adjust size as needed */
+            object-fit: cover;
+            border-radius: 10px; /* Optional: rounded corners */
+        }
+
+        .header_text {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Wait, did that really just happen?</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWl1MGI0a2docjJxcTdwdDI2cXBtcjM1Nml5bXRyZnh6Y3c0Z3g0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yQodNVIbIKrEKRUyGE/giphy.gif" alt="Cute animated illustration">
+        </div>
+        <div>
+            <h1 class="header_text">You've just made my day, or maybe my whole year or maybe my life but you are mine!</h1>
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="window.location.href='glowing-plants/dist/index.html'">I got something for you</button>
+        </div>
+    </div>
+</body>
+</html>

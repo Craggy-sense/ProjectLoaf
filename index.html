@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        /* Internal CSS for centering content */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4; /* Optional: background color */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .square-image {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .header_text {
+            margin: 10px 0;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #fbf7f7;
+        }
+
+        .btn:active {
+            background-color: #faf9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">I have enjoyed every moment we've spent together, and I want to make more memories with you. So, I have to ask...</h1>
+            <h1 class="header_text">Will you be my girlfriend?</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjZ5MjFpNzN3cmNuMWFoZzV5bGlrMDJ1eDliaWpvd3hvaXNnYWptaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oriO6qJiXajN0TyDu/giphy.gif" alt="Cute animated illustration" class="square-image">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+        </div>
+    </div>
+    <script>
+        function nextPage() {
+            window.location.href = "yes.html";
+        }
+
+        function moveButton() {
+            var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+            var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+            document.getElementById('noButton').style.position = 'absolute';
+            document.getElementById('noButton').style.left = `${x}px`;
+            document.getElementById('noButton').style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
