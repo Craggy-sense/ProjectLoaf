@@ -8,23 +8,23 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('wow.jpg');
+    background-image: url('pink.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
   }
 
   #specific-section {
-    background-image: url('wow.jpg');
+    background-image: url('pink.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 50px;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   
@@ -44,7 +44,7 @@ body {
     font-family: 'Nunito';
     font-size: 40px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0;
